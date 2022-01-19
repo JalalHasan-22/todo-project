@@ -15,50 +15,44 @@
   </head>
   <body>
     <!-- Header part Begins-->
-    <header>
-      <div class="container nav-container">
-        <img src="/imgs/logo.jpg" alt="logo" class="logo" />
-        <h1 class="title">The ToDo List</h1>
-        <nav class="nav-bar">
-          <ul class="nav-links">
-            <li class="nav-item"><a href="/">Home</a></li>
-            <li class="nav-item"><a href="aboutus.html">About Us</a></li>
-            <li class="nav-item"><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header id="header">
+      <nav class="nav container">
+        <div class="logo">
+          <i class="fas fa-list-alt"></i>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
+    <main id="main">
       <div class="container">
         <section class="info">
           <div><i class="fas fa-user-tie"></i></div>
           <div>
-            <p>Jalal Hasan</p>
-            <p>Full stack developer</p>
+            <div class="info-title">Jalal Hasan</div>
+            <div class="description">Full Stack Developer</div>
           </div>
         </section>
         <hr />
         <section class="contact">
-          <h3>Send us a message</h3>
-          <form>
-            <label for="fname">Your name:</label><br />
-            <input type="text" id="fname" name="fname" /><br />
-            <label for="email">Email Address:</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label for="message">Your Message</label><br />
+          <h3>Contact Me</h3>
+          <div class="form">
+            <label for="fname">Your name:</label>
+            <input type="text" id="fname" name="fname" />
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" />
+            <label for="message">Your Message</label>
             <textarea name="message"></textarea>
-            <input type="submit" name="submit" />
-          </form>
+          </div>
+          <a href="#" class="submit">Send</a>
         </section>
       </div>
     </main>
 
     <footer>
-      <div class="address">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-        minus!
-      </div>
       <div class="copy-right">&copy; ASAC 2022 All rights reserved</div>
       <div class="social">
         <p>Share your tasks with your teammates</p>

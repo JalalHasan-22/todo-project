@@ -15,45 +15,65 @@
   </head>
   <body>
     <!-- Header part Begins-->
-    <header>
-      <div class="container nav-container">
-        <img src="/imgs/logo.jpg" alt="logo" class="logo" />
-        <h1 class="title">The ToDo List</h1>
-        <nav class="nav-bar">
-          <ul class="nav-links">
-            <li class="nav-item"><a href="/">Home</a></li>
-            <li class="nav-item"><a href="aboutus.html">About Us</a></li>
-            <li class="nav-item"><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header id="header">
+      <nav class="nav container">
+        <div class="logo">
+          <i class="fas fa-list-alt"></i>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Header part Ends-->
 
     <!-- Main section begins -->
-    <main class="tasks">
+    <main id="main">
       <div class="container">
-        <table class="table">
+        <h1 class="title">ToDo List</h1>
+        <table class="list">
           <thead>
             <tr>
-              <th>ToDo Task</th>
-              <th>Progress</th>
+              <th>List</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>
+                <span>Learn JS</span>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <div class="progress green"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Create HTML Page</span>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <div class="progress"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>walk the Dog</span>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <div class="progress"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Watch the Match</span>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <div class="progress"></div>
+              </td>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Finish the assignment</td>
-              <td>Finished</td>
-            </tr>
-            <tr>
-              <td>Read more about HTML & CSS</td>
-              <td>In progress</td>
-            </tr>
-            <tr>
-              <td>Get a hair cut</td>
-              <td>Pending</td>
-            </tr>
-          </tbody>
         </table>
       </div>
     </main>
@@ -61,10 +81,6 @@
 
     <!-- Footer begins -->
     <footer>
-      <div class="addres">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-        minus!
-      </div>
       <div class="copy-right">&copy; ASAC 2022 All rights reserved</div>
       <div class="social">
         <p>Share your tasks with your teammates</p>
