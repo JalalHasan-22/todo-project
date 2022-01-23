@@ -125,6 +125,7 @@ footer a:hover {
 .description {
   border: 1px solid #333;
   height: 100px;
+  padding: 1rem;
 }
 
 .contact {
