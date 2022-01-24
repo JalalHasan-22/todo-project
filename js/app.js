@@ -15,26 +15,18 @@ const askQuestion = function (question) {
 
 const firstQuestion = askQuestion(
   "1) Are you commited to finish all of your tasks ? Yes / No"
-)
-  ?.toLocaleUpperCase()
-  .charAt(0);
-
-console.log(firstQuestion);
+)?.toLocaleUpperCase();
 
 const secondQuestion = askQuestion(
   "2) is it essential to finish all your tasks every day ? Yes / No"
-)
-  ?.toLocaleUpperCase()
-  .charAt(0);
-
-const thirdQuestion = askQuestion("3) Are you an organized person ? Yes / No")
-  ?.toLocaleUpperCase()
-  .charAt(0);
-
+)?.toLocaleUpperCase();
+const thirdQuestion = askQuestion(
+  "3) Are you an organized person ? Yes / No"
+)?.toLocaleUpperCase();
 const answerValidation = function (answer) {
-  if (answer === "Y") answer = "Yes";
-  else if (answer === "N") answer = "No";
-  else if (answer === "") answer = "Invalid";
+  if (answer === "YES" || answer === "Y") answer = "Yes";
+  else if (answer === "NO" || answer === "N") answer = "No";
+  else answer = "Invalid";
 
   answersArr.push(answer);
 };
