@@ -9,42 +9,39 @@
 
 let answersArr = [];
 
-const firstQuestion = function () {
-  let answer = prompt(
-    "1) Are you commited to finish all of your tasks ? Yes / No"
-  )
-    ?.toLocaleUpperCase()
-    .charAt(0);
-  return answer;
+const askQuestion = function (question) {
+  return prompt(question);
 };
 
-const secondQuestion = function () {
-  let answer = prompt(
-    "2) is it essential to finish all your tasks every day ? Yes / No"
-  )
-    ?.toLocaleUpperCase()
-    .charAt(0);
-  return answer;
-};
+const firstQuestion = askQuestion(
+  "1) Are you commited to finish all of your tasks ? Yes / No"
+)
+  ?.toLocaleUpperCase()
+  .charAt(0);
 
-const thirdQuestion = () => {
-  let answer = prompt("3) Are you an organized person ? Yes / No")
-    ?.toLocaleUpperCase()
-    .charAt(0);
-  return answer;
-};
+console.log(firstQuestion);
+
+const secondQuestion = askQuestion(
+  "2) is it essential to finish all your tasks every day ? Yes / No"
+)
+  ?.toLocaleUpperCase()
+  .charAt(0);
+
+const thirdQuestion = askQuestion("3) Are you an organized person ? Yes / No")
+  ?.toLocaleUpperCase()
+  .charAt(0);
 
 const answerValidation = function (answer) {
   if (answer === "Y") answer = "Yes";
   else if (answer === "N") answer = "No";
-  else answer = "Invalid";
+  else if (answer === "") answer = "Invalid";
 
   answersArr.push(answer);
 };
 
-answerValidation(firstQuestion());
-answerValidation(secondQuestion());
-answerValidation(thirdQuestion());
+answerValidation(firstQuestion);
+answerValidation(secondQuestion);
+answerValidation(thirdQuestion);
 
 const printAnswers = function (arr) {
   for (let i = 0; i < arr.length; i++) {
